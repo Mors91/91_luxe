@@ -357,15 +357,22 @@ section {
     color: var(--light-color);
     line-height: 1.8;
 }
+
+
 .options{
     background: var(--bg-color);
 }
 .options .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    gap: 2rem;
+   /* display: grid;
+    grid-template-columns: repeat(auto-fit, 32rem);
+    gap: 1rem;
     align-items: flex-start;
+    justify-content: center;*/
+    display: flex;
     justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
 }
 .options .box-container .box{
     border-radius: .5rem;
@@ -383,9 +390,38 @@ section {
     object-fit: cover;
     transform: translateY(-5rem);
 }
+.options .box-container .box h3{
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+.options .box-container .box .gold{
+    color: gold;
+}
+.options .box-container .box .silver{
+    color: silver;
+}
+.options .box-container .box .bronze{
+    color: #cd7f32;
+}
+.options .box-container .box p{
+    padding: .2rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
 
+.options .box-container .box .info{
+    border-top: var(--border);
+    margin-top: 1.5rem;
+    padding-top: 1rem 0;
+}
 
+.options .box-container .box:hover img{
+    transform: translateY(-7rem);
 
+}
 
 
 
