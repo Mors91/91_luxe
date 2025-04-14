@@ -361,16 +361,22 @@ section {
 
 .options{
     background: var(--bg-color);
+
 }
 .options .box-container{
    /* display: grid;
     grid-template-columns: repeat(auto-fit, 32rem);
     gap: 1rem;
     align-items: flex-start;
-    justify-content: center;*/
+    justify-content: center;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;*/
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
     margin-top: 2rem;
     width: 100%;
 }
@@ -486,7 +492,22 @@ section {
     font-size: 1.6rem;
 }
 
-/* media queries */
+.reviews{
+    background: url('images/review-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slide .user img{
+    width: 80%;
+    max-width: 250px;
+    border-radius: .5rem;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+                                                            /* media queries */
 
 @media (max-width: 1280px) {
     html {
@@ -545,6 +566,22 @@ section {
     .about .box-container .box {
         flex: 0 1 100%;
         
+    }
+    .options .box-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .options .box-container .box {
+        flex-grow: 1;
+        flex-basis: 200;
+    }
+    .steps .box-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .steps .box-container .box {
+        flex-grow: 1;
+        flex-basis: 200;
     }
 
 }
